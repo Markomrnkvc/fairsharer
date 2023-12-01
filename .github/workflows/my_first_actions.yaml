@@ -7,6 +7,11 @@ on:
 jobs:
   My-first-CI:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+      
+
     steps:
     - uses: actions/checkout@v3
     - name: Set up Python
@@ -22,4 +27,5 @@ jobs:
         ruff check.
         # ***add your command to run ruff here***
     - name: Test with pytest
-      run: pytest    
+      run: |
+        pytest    
