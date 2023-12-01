@@ -19,7 +19,7 @@ jobs:
         pip install -r requirements.txt
     - name: Lint with Ruff
       run: |
+        ruff check.
         # ***add your command to run ruff here***
     - name: Test with pytest
-      run: |
-        pytest    
+      run: pytest    
