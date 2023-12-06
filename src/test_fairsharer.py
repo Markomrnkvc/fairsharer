@@ -1,4 +1,4 @@
-from src import fair_sharer
+from src import fairsharer
 
 def test_fair_sharer():
     assert fair_sharer([0,1000,800,0], 1) == [100, 800, 900, 0]
