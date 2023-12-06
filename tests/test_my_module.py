@@ -1,7 +1,7 @@
 """Tests for the fairsharer.my_module module.
 """
 import pytest
-from fairsharer.my_module import hello
+from src.my_module import hello
 
 
 def test_hello():
